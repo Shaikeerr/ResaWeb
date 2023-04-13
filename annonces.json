@@ -1,0 +1,43 @@
+[
+    {
+        "nom":"Plaine d'Hyrule",
+        "description":"Avec ses vastes prairies verdoyantes et ses collines pittoresques, la Plaine d'Hyrule est un lieu idéal pour les amoureux de la nature et les explorateurs.",
+        "prix":"500",
+        "image":"<img src='img/hyrule-field.jpg' alt=''>"
+    },
+
+    {
+        "nom":"Domaine Zora",
+        "description":"Découvrez le Domaine Zora de Zelda, un endroit magique où les eaux cristallines abritent une communauté de Zoras fascinante",
+        "prix":"500",
+        "image":"<img src='img/zora-domain.jpg' alt=''>"
+    },
+
+    {
+        "nom":"Village Goron",
+        "description":"Niché sur la Montagne de la Mort, le village Goron est une expérience atypique tant dans ses habitants exotiques que dans ses activités passionantes",
+        "prix":"200",
+        "image":"<img src='img/goron-city.jpg' alt=''>"
+    },
+
+    {
+        "nom":"Village Cocorico",
+        "description":"Avec ses rues pavées, ses maisons en pierre et sa fontaine célèbre, le Village Cocorico est une destination incontournable pour les amateurs d'histoire et de culture.",
+        "prix":"200",
+        "image":"<img src='img/Cocorico.jpg' alt=''>"
+    },
+
+    {
+        "nom":"Village d'Ecaraille",
+        "description":"Avec ses eaux cristallines, ses palmiers luxuriants et ses couchers de soleil époustouflants, Ecaraille est la destination idéale pour ceux qui cherchent une escapade insulaire.",
+        "prix":"200",
+        "image":"<img src='img/Ecaraille.jpg.png' alt=''>"
+    },
+
+    {
+        "nom":"Village d'Elimith",
+        "description":"Entouré d'une nature verdoyante et préservée, ce village Hylien traditionnel offre une expérience unique aux aventuriers en quête de détente et de ressourcement.",
+        "prix":"200",
+        "image":"<img src='img/Elimith.png' alt=''>"
+    }
+]

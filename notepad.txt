@@ -1,0 +1,5 @@
+          <a href="https://fr-fr.facebook.com"><img src="SVG/Facebook.svg" alt="Page Facebook"></a>
+          <a href="https://www.instagram.com"><img src="SVG/Instagram.svg" alt="Page Instagram"></a>
+          <a href="https://www.reddit.com"><img src="SVG/Reddit.svg" alt="Communauté Reddit"></a>
+          <a href="https://twitter.com/home"><img src="SVG/Twitter.svg" alt="Compte Twitter"></a>
+          <a href="https://www.youtube.com"><img src="SVG/Youtube.svg" alt="Chaîne Youtube"></a>
