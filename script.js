@@ -15,9 +15,8 @@ fetch('annonces.json').then(function(response) {
 
 function nouveautes(x) {
     Slider_new = document.querySelector(".js-boxes")
-    Slider_new.innerHTML+="<div class='box'>" + x.image + "<h1 class='Prix'>" + x.prix + "</h1>" + "<img class='Rubis' src='img/Rubis.png' alt=''>" + "<button class='Bouton'>  Voir l'annonce ↦ </button>" + "<h2>" + x.nom + "</h2>" + "<p>" + x.description + "</p>" + "</div>"
+    Slider_new.innerHTML+="<div class='box'>" + x.image + "<div class=div_prix><h1 class='Prix'>" + x.prix + "</h1>" + "<img class='Rubis' src='img/Rubis.png' alt=''></div>" + "<button class='Bouton'>  Voir l'annonce ↦ </button>" + "<h2>" + x.nom + "</h2>" + "<p>" + x.description + "</p>" + "</div>"
 }
-
 photo = document.querySelector(".js-boxes")
 Fdroite = document.querySelector(".right")
 Fgauche = document.querySelector(".left")
@@ -27,7 +26,7 @@ Fgauche.addEventListener("click",decaleGauche)
 
 function decaleDroite() {
     position+=1
-    photo.style.transform="translateX(calc(" + position + "* -500px))";
+    photo.style.transform="translateX(calc(" + position + "* -33.5%))";
     if (position > maxPosition) {
         retourdebut()
     }
@@ -36,7 +35,7 @@ function decaleDroite() {
 
 function decaleGauche() {
     position-=1
-    photo.style.transform="translateX(calc(" + position + "* -500px))";
+    photo.style.transform="translateX(calc(" + position + "* -33.5%))";
     if (position < minPosition) {
         retourfin()
     }

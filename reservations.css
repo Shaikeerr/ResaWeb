@@ -1,0 +1,257 @@
+@font-face {
+    font-family: RnR;
+    src: url(Fonts/RocknRollOne-Regular.woff2);
+  }
+
+@font-face {
+    font-family: Hylia;
+    src: url(Fonts/hyliaserifbeta-regular-webfont.woff2);
+}
+
+body {
+    margin: 0;
+    background-color: rgb(40, 40, 40);
+    overflow-x: auto;
+}
+
+#menu {
+	background: #000000;
+	color: #FFF;
+	height: 45px;
+	border-radius: 0px;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  margin-left: -10px;
+  z-index: 2;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+  transition: all 0.5s;
+}
+
+#menu li:hover:not(.accueil) {
+  background-color: white;
+  transition: all 0.5s;
+}
+
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px; 
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+  transition: all 0.5s;
+}
+
+#menu a:hover {
+  color: black;
+  transition: all 0.5s;
+}
+
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+
+.logo_nav {
+  max-height: 40px;
+  margin-left: 20px;
+
+}
+
+main {
+    margin-top: 45px;
+    position: absolute;
+    left: 15%;
+    background-color: rgb(40, 40, 40);;
+    width: 85%;
+}
+
+.filtres {
+    margin-top: 25px;
+    position:fixed;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(15, 15, 15);
+}
+
+label {
+    margin-left: 5%;
+    font-size: 1rem;
+    font-family: RnR;
+    color: white;
+}
+
+h3:not(.titre_annonce){
+  margin-left: 5%;
+  font-size: 1rem;
+  font-family: RnR;
+  color: white;
+}
+
+.ipt_prix {
+  float: left;
+}
+
+.Prix {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  display: block;
+  transition: all;
+}
+
+.Prix:hover {
+  color: #C6B38E;
+}
+
+.ipt_prix:checked + .Prix { 
+  color: palegreen;
+}
+
+.nom_filtre {
+  position: absolute;
+  top: 2%;
+}
+
+select {
+    margin-left: 5%;
+}
+
+input {
+    margin-left: 5%;
+}
+
+.box_destination {  
+    border: solid 3px white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    width: 90%;
+    height: 250px;
+    margin-bottom: 2%;
+    transition: all .5s;
+}
+
+.box_destination:hover {
+    border-color : #C6B38E;
+    transition: all .5s;
+}
+
+.box_destination h3 {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    font-size: 2rem;
+    color: white;
+    font-family: Hylia;
+}
+
+.box_destination h4 {
+  position: relative;
+  width: 5%;
+  left: 91%;
+  bottom: 24%;
+  font-size: 1.5vw;
+  color: white;
+  font-family: Hylia;
+}
+
+.box_destination p {
+    font-size:calc(8px + .5vw);
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 42%;
+}
+.box_destination img:not(.Rubis) {
+    top: 0;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 100%;
+    width: 40%;
+    margin: 0;
+    left: 0;
+}
+
+.Rubis {
+  display: inline;
+    max-width: 1.80vw;
+    position: relative; 
+    top: 1vw;
+    z-index: 0;
+    left: 95%; /* Ajout d'une position absolue et de la marge droite pour l'image Rubis */
+
+}
+
+.resultats_recherche {
+    color: white;
+    margin-left: 5%;
+}
+
+.box_destination .offre{
+  position: relative;
+  font-size: 1.5vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  padding: 1%;
+  margin-top: 10%;
+  color: white;
+  text-decoration: none;
+  font-family: Hylia;
+  top: 21%;
+  left: 81%;
+  transition: all .5s;
+}
+
+.box_destination .offre:hover {
+  border-color: #C6B38E;
+  color: #C6B38E;
+}
+
+#monde {
+  background-color: rgba(0, 0, 0, 1);
+  margin-top: 20%;
+  border: 1px solid white;
+  color: white;
+  padding: 3%;
+  transition: all .5s;
+}
+
+#monde:hover {
+  border-color: #C6B38E;
+  color: #C6B38E;
+}
+
+.recherche_annonce {
+  margin-top: 0px;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid white;
+  color: white;
+  padding: 5%;
+  transition: all .5s;
+}
+
+.recherche_annonce:hover {
+  border-color: #C6B38E;
+  color: #C6B38E;
+}

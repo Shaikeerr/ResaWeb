@@ -1,0 +1,227 @@
+
+
+@font-face {
+	font-family: Hylia;
+	src: url(Fonts/hyliaserifbeta-regular-webfont.woff2);
+  }
+  
+  @font-face {
+	font-family: RnR;
+	src: url(Fonts/RocknRollOne-Regular.woff2);
+  }
+  
+  @font-face {
+	font-family: r1;
+	src: url(Fonts/ReggaeOne-Regular.woff2);
+  }
+
+#menu {
+	background: #000000;
+	color: #FFF;
+	height: 45px;
+	border-radius: 0px;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  z-index: 2;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+  transition: all 0.5s;
+}
+
+#menu li:hover:not(.accueil) {
+  background-color: white;
+  transition: all 0.5s;
+}
+
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px; 
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+  transition: all 0.5s;
+}
+
+#menu a:hover {
+  color: black;
+  transition: all 0.5s;
+}
+
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+
+.logo_nav {
+  max-height: 40px;
+  margin-left: 20px;
+
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+    overflow-x: hidden;  
+  	margin: 0;
+}
+
+.annonce {
+	margin : 45px;
+	margin-top: 90px;
+	color: white;
+}
+
+.annonce img {
+	position: absolute;
+	width: 40%;
+	height: 40%;
+}
+
+.annonce h1 {
+	left: 50%;
+	position: absolute;
+	width: 50%;
+	font-family: Hylia;
+}
+
+.annonce p {
+	font-family: RnR;
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	height: 17%;
+	overflow-y: auto;
+}
+
+.annonce .desc {
+	top: 24%;
+}
+
+.annonce .price {
+	top: 48%;
+	width: 10%;
+}
+
+.btn_reservation {
+	text-decoration: none;
+	position: absolute;
+	top: 48%;
+	font-family: Hylia;
+	left: 85%;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid white;
+	color: white;
+	padding: 1%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	transition: all .5s;
+  }
+  
+.btn_reservation:hover {
+	border-color: #C6B38E;
+	color: #C6B38E;
+  }
+
+
+  footer {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #000000;
+	margin: 0;
+	bottom: 0;
+	height: 300px;
+	color: white;
+  }
+  
+  .colonne {
+	width: 400px; 
+	height: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  
+  .colonne h3 {
+	font-family: r1;
+  }
+  
+  .colonne p {
+
+	color: white;
+	font-family : RnR
+  }
+  
+  
+  .colonne img:not(.logo_footer) {
+	max-width: 24px;
+	margin-right: 5px;  
+	float: left;
+	filter: invert();
+	transition:all .5s
+  }
+  
+  .colonne a:hover:not(.exclude, .logo_footer) {
+	filter: sepia(70%) saturate(1000%) hue-rotate(360deg) brightness(80%) contrast(88%);
+	transition:all .5s
+  }
+  
+  .colonne a {
+	transition: all .5s
+  }
+  
+  .logo_footer { 
+	margin-top: 20px;
+	width: 128px;
+	display: block;
+	position: absolute;
+	left: 75%;
+	transition:all .5s
+  }
+  
+  .logo_footer:hover {
+	filter: invert();
+	transition:all .5s
+  }
+  
+  .colonne input {
+	position: absolute;
+	left: 72%;
+	margin-top: 220px;
+	background-color: rgba(0, 0, 0, 0);
+	color: #C6B38E;
+	border: solid 1px #C6B38E;
+	font-size: 1.25rem;
+	cursor: pointer;
+	transition: all .2s;
+	text-decoration: none;
+	width: 225px;
+	height: 50px;
+  }
+  
+  .colonne input:hover {
+  
+	color: white;
+	border: solid 1px white;
+	transition: all .2s;
+  }
+
+

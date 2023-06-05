@@ -1,11 +1,5 @@
 
 
-body {
-  overflow-x: hidden;  
-  margin: 0;
-
-}
-
 @font-face {
   font-family: Hylia;
   src: url(Fonts/hyliaserifbeta-regular-webfont.woff2);
@@ -16,10 +10,16 @@ body {
   src: url(Fonts/RocknRollOne-Regular.woff2);
 }
 
+@font-face {
+  font-family: r1;
+  src: url(Fonts/ReggaeOne-Regular.woff2);
+}
 
 
 body {
   background-color: rgb(40, 40, 40);
+    overflow-x: hidden;  
+  margin: 0;
 }
 
 .container {
@@ -30,35 +30,40 @@ body {
 }
 
 .js-slider {
-  margin-left: 2.25%;
   position: relative;
-  width: 100%;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
   overflow: hidden;
 }
 
 .js-boxes {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
-  transition: all 0.5s;
+  transition: transform 0.5s;
 }
 
 .box {
+  background-color: #111522;
   border: solid 2px #C6B38E;
-  height: 350px;
-  margin-right: 100px;
+  width: 31.5%;
+  max-height: 550px;
+  flex-shrink: 0;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
 .box img:not(.Rubis) {
-  width: 400px;
   height: 200px;
+  object-fit: cover;
+  width: 100%;
   margin: 0;
-  flex-shrink: 0;
 }
 
 .box h2 {
   position: relative;
-  top: -44%;
+  bottom: 20%;
   margin: 0;
   margin-left: 10px;
   font-family: Hylia;
@@ -67,39 +72,66 @@ body {
 
 .box p {
   position: relative;
-  top: -47%;
+  bottom: 15%;
+  width: 90%;
+  max-height: 50%;
+  word-wrap: break-word;
+  margin: 0;
   margin-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  width: 60%;
-  color: #c0b7a7
+  color: #a7bbc0;
 }
 
 .Prix {
-  position: relative;
-  top: 5%;
-  left: 70%;
-  font-family: Hylia;
+  font-size: 2vw;
+  margin: 0;
+  margin-right: 10px;
+  font-family: RnR;
   color: #C6B38E;
 }
 
 .Rubis {
-  position: relative;
-  top: -15%;
-  left: 87%;
-    max-width: 30px;
+  max-width: 2vw;
+  position: relative; 
+  top: 0vw;
+  right: 5px; /* Ajout d'une position absolue et de la marge droite pour l'image Rubis */
+}
+
+.div_prix {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10%;
 }
 
 .Bouton {
   position: relative;
-  top: -2%;
-  left: 52.5%;
+  bottom: 25%;
+  width: 100%;
+  min-height: 45px;
   background-color: black;
   color: white;
-  font-size: 1.25rem ;
+  font-size: 1.25rem;
   cursor: pointer;
-  height: 40px;
-  border-radius: 5px;
   border: none;
+}
+
+.Bouton:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.Bouton:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.titre_bouton {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-65%);
 }
 
 .left {
@@ -121,12 +153,14 @@ body {
   filter: invert();
 }
 
+
 .titre {
   text-align: center;
   font-family: Hylia;
   color: white;
   font-size: 4rem;
 }
+
 
 header {
   margin-top: -20px;
@@ -157,28 +191,28 @@ header h1 {
 
 }
 
-.Begin {
+header .Begin {
   color: white;
   position: relative;
   top: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  height: 50px;
+  width: 15%;
   background-color: rgba(0, 0, 0, 0);
   border-color: white;
   border: solid 1px;
   cursor: pointer;
   transition: all 1s;
   text-decoration: none;
+  text-align: center;
+  line-height: 350%;
+  font-family: RnR;
 }
 
 .Begin:hover {
   color: #C6B38E;
   border: solid 1px #C6B38E;
-  transition: all 0.5s;
-
 }
 
 a {
@@ -219,7 +253,7 @@ a {
 #menu a {
 	display: block;
 	line-height: 45px;
-	padding: 0 14px;
+	padding: 0 14px; 
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -256,47 +290,52 @@ a {
   margin-right: 2%;
   margin-left: 2%;
   background-color: rgba(0, 0, 0, 0);
-  color: #C6B38E;
-  border: solid 1px #C6B38E;
+  color: white;
+  border: solid 1px white;
   font-size: 1.25rem;
   cursor: pointer;
   transition: all .2s;
   text-decoration: none;
-  width: 225px;
+  width: 50%;
+  border-radius: 50px;
   height: 50px;
   text-align: center;
 }
 
 .tags:hover {
 
-  color: white;
-  border: solid 1px white;
+  color: #C6B38E;
+  border: solid 1px #C6B38E;
   transition: all .2s;
 }
 
 .tags::placeholder {
-  color: #C6B38E;
+  color: white;
   transition: all .2s;
 }
 
 .tags:hover::placeholder {
-  color: white;
+  color: #C6B38E;
   background-color: rgba(0, 0, 0, 0);
   transition: all .2s;
 
 }
 
 .valider {
+  margin-top: 20px;
   border-radius: 10px;
-  width: 100px;
-  background-color: rgba(0, 0, 0, 0);
-  color: #C6B38E;   
-  border-color: #C6B38E;
-  transition: all 1s;
+  width: 20%;
+  border: none;
+  color: black;
+  background-color: #C6B38E;
+  transition: all .5s;
 }
 
 .valider:hover {
-  transition: all 1s;
+  color: black;
+  width: 25%;
+  border: solid 2px white;
+
 }
 
 option {
@@ -341,6 +380,7 @@ option {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .box_cover p:not(.tag) {
@@ -376,46 +416,87 @@ option {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: #000000;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(2, 100px);
-  gap: 10px;
+  height: 300px;
   color: white;
 }
 
-footer p {
-  margin-left: 1%;
-  color: white;
-}
-
-footer img {
-  filter: invert();
-  width: 48px;
-  height: 48px;
+.colonne {
+  width: 400px; 
+  height: 300px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
-
-footer {
-  background-color: black;
-  width: 100%;
-  padding: 30px;
-  height: 300px
+.colonne h3 {
+  font-family: r1;
 }
-footer h3 {
-  color: #fff;
-  text-transform: uppercase;
+
+.colonne p {
+  color: white;
+  transition: all .5s;
+  font-family : RnR
+}
+
+
+.colonne img:not(.logo_footer) {
+  max-width: 24px;
+  margin-right: 5px;  
+  float: left;
+  filter: invert();
+  transition:all .5s
+}
+
+.colonne a:hover:not(.exclude, .logo_footer) {
+  filter: sepia(70%) saturate(1000%) hue-rotate(360deg) brightness(80%) contrast(88%);
+  transition:all .5s
+}
+
+.colonne a {
+  transition: all .5s
+}
+
+.logo_footer { 
+  margin-top: 20px;
+  width: 128px;
   display: block;
-  width: 200px;
+  position: absolute;
+  left: 75%;
+  transition:all .5s
 }
 
-footer .colonne:not(.colonne1) { 
-  padding-left: 100%;
-  margin-left: 100%;
+.logo_footer:hover {
+  filter: invert();
+  transition:all .5s
 }
+
+.colonne input {
+  position: absolute;
+  left: 72%;
+  margin-top: 220px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #C6B38E;
+  border: solid 1px #C6B38E;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all .2s;
+  text-decoration: none;
+  width: 225px;
+  height: 50px;
+}
+
+.colonne input:hover {
+
+  color: white;
+  border: solid 1px white;
+  transition: all .2s;
+}
+
 
 
 
